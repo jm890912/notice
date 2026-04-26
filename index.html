@@ -485,7 +485,7 @@ function copyAccount(who) {
   const el = document.getElementById(who === 'groom' ? 'accountGroom' : 'accountBride');
   const num = el.innerText.replace(/[^0-9]/g, "");
   navigator.clipboard.writeText(num).then(() => {
-    showToast(who === 'groom' ? "신랑 계좌 복사 완료✔" : "신부 계좌 복사 완료✔");
+    showToast(who === 'groom' ? "신랑측 계좌 복사 완료" : "신부측 계좌 복사 완료");
   });
 }
 
